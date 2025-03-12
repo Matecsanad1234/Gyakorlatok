@@ -1,0 +1,31 @@
+body{
+background-image: url(back1.PNG);
+color: #C06964;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.div-001{
+    text-align: center;
+    height: 50%;
+    width: 50%;
+    margin: 100px;
+    background-color:#FFF1DD;  
+    align-items: center;
+} 
+
+
+
+.context1{
+
+    background-color:#FFF1DD; 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.div-002{
+
+
+
+}
