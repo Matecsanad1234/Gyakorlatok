@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    height: 90vh;
+    width: 100%;
+}
+
+
+section{
+    display: grid;
+    place-content: center;
+    place-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: grey;
+}
+
+.header{
+    background: url(../IMG/header.jpg);
+}
