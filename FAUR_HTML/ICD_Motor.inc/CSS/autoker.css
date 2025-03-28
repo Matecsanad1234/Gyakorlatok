@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     height: 90vh;
@@ -9,11 +13,71 @@ section{
     display: grid;
     place-content: center;
     place-items: center;
-    min-height: 100vh;
     padding: 20px;
-    background: grey;
+}
+.section-header{
+    background: url(../IMG/header.jpg);
+    color: #fff;
+    font-size: 80px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    min-height: 100vh;
+}
+.section-header button{
+    height: 50px;
+    width: 300px;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 30px;
+}
+.section-content{
+    background: rgb(58, 58, 58);
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    min-height: 100vh;
 }
 
-.header{
-    background: url(../IMG/header.jpg);
+.card{
+    height: 560px;
+    width: 400px;
+    background: rgb(145, 145, 145);
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+    margin: 10px;
+}
+.card button{
+    height: 40px;
+    width: 100px;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#nagy{
+    color: white;
+    font-size: 80px;
+}
+#bittodujo{
+    width: 400px;
+}
+.section-footer{
+    background: rgb(22, 22, 22);    
+    color: white;
 }
