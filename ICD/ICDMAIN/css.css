@@ -1,31 +1,51 @@
 body{
-background-image: url(back1.PNG);
-color: #C06964;
-background-repeat: no-repeat;
-background-size: cover;
+
+background-image: url(back.jpg);
+
+margin:0px;
 }
 
-.div-001{
-    text-align: center;
-    height: 50%;
-    width: 50%;
-    margin: 100px;
-    background-color:#FFF1DD;  
+td{
+    width: 1000px;
+    
+}
+
+.d2{
+
     align-items: center;
-} 
-
-
-
-.context1{
-
-    background-color:#FFF1DD; 
-    align-items: center;
-    justify-content: center;
     display: flex;
+    justify-content: center;
+
 }
 
-.div-002{
+.welcome{
+border-color: black;
+border: 6px solid;
+margin: 20px;
+height: 600px;
+width: 600px;
+text-align: center;
+letter-spacing: 10px;
+display: flex;
+align-content: space-between;
+flex-direction: column;
+}
 
+.welcomejp{
+    border-color: black;
+    border: 6px solid;
+    margin: 20px;
+    height: 600px;
+    width: 600px;
+    text-align: center;
+    letter-spacing: 10px;
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    float: right;
+    }
 
-
+.content{
+    display: flex;
+    flex-direction: row;
 }
