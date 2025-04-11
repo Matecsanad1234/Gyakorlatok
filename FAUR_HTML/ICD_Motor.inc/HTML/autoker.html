@@ -1,68 +1,54 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Autókereskedés hehe</title>
-        <link rel="stylesheet" href="../CSS/autoker.css">
-    </head>
-    <body>
-        <section class="section-header">
-            <h1>AUTÓKERESKEDÉSNEKIJE</h1><br>
-            <button><a href="#2">LEJJEB MENNYÉ</a></button>
-        </section>
-        <section class="section-content" id="2">
-            <h1 id="nagy">Best sellers</h1>
-            <div class="content">
-                <div class="card">
-                    <h1>Autó neve</h1>
-                    <p>ez egy izonyatos borzalom. VEDD MEG pls</p>
-                    <img src="../IMG/car.jpg" width="300px"><br><br><br>
-                    <button><a href="kosar.html">Kell</a></button>
-                </div>
-                <div class="card">
-                    <h1>Autó neve</h1>
-                    <p>Sportótó 0-100 = 60p VEDD MEG pls</p>
-                    <img src="../IMG/car2.jpg" width="300px"><br><br><br>
-                    <button><a href="kosar.html">Kell</a></button>
-                </div>
-                <div class="card">
-                    <h1>Autó neve</h1>
-                    <p>limlomghini VEDD MEG pls</p>
-                    <img src="../IMG/car3.jpg" width="300px"><br><br><br>
-                    <button><a href="kosar.html">Kell</a></button>
-                </div>
-            </div>
-            <div class="content">
-                <div class="card">
-                    <h1>Renault laguna mk2 2004 2.0T</h1>
-                    <p>Világ legjobb autója, 163HP widebody</p>
-                    <img src="../IMG/car1.1.jpg" width="300px" height="250px"><br>
-                    <button><a href="kosar.html">Kell</a></button>
-                </div>
-                <div class="card">
-                    <h1>ZÁZZALTÉP</h1>
-                    <p>Szép, Jó, Gyors!</p>
-                    <img src="../IMG/car1.2.png" width="300px"><br><br><br>
-                    <button><a href="kosar.html">Kell</a></button>
-                </div>
-            </div>
-        </section>
-        <section class="section-footer">
-            Köszönjük, hogy mindket válaztottá! Igazán kedves vagyol! Köcce
-        </section>
-    </body>
-    </html>
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autókereskedés hehe</title>
+    <link rel="stylesheet" href="../CSS/autoker.css">
+</head>
+<body>
+    <section class="section-header">
+        <h1>AUTÓKERESKEDÉSNEKIJE</h1><br>
+        <button><a href="#2">LEJJEB MENNYÉ</a></button>
+    </section>
 
+    <!-- Szűrő -->
+    <section class="filter-section">
+        <h2>Szűrés</h2>
+        <label>Ár: <input type="number" id="priceFilter" placeholder="max ár Ft"></label>
+        <label>Teljesítmény (LE): <input type="number" id="powerFilter" placeholder="min LE"> </label>
+        <label>Motortérfogat (ccm): <input type="number" id="engineFilter" placeholder="min m3"></label>
+        <button onclick="applyFilter()">Szűrés</button>
+    </section>
 
+    <!-- Autók -->
+    <section class="section-content" id="2">
+        <h1 id="nagy">Best sellers</h1>
+        <div class="content" id="carContainer">
+            <!-- Ide jönnek majd dinamikusan az autók -->
+        </div>
+    </section>
 
+    <!-- Kapcsolat -->
+    <section class="section-contact">
+        <h2>Kapcsolat</h2>
+        <form>
+            <input type="text" placeholder="Név" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Üzenet..." rows="5" required></textarea>
+            <button type="submit">Küldés</button>
+        </form>
+    </section>
 
+    <!-- Elérhetőség -->
+    <section class="section-footer">
+        <h3>Elérhetőség</h3>
+        <p>Telefon: +36 30 123 4567</p>
+        <p>Email: info@autoker.hu</p>
+        <iframe src="https://maps.google.com/maps?q=Budapest&t=&z=13&ie=UTF8&iwloc=&output=embed" width="300" height="200"></iframe>
+        <p>Köszönjük, hogy minket választottá!</p>
+    </section>
 
-
-
-
-
-
-
-
-
+    <script src="../JS/script.js"></script>
+</body>
+</html>

@@ -1,111 +1,131 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-html{
+
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     margin: 0;
-    height: 90vh;
-    width: 100%;
+    font-family: "Oswald", sans-serif;
+    background: #111;
+    color: white;
 }
 
-
-section{
+section {
     display: grid;
     place-content: center;
     place-items: center;
     padding: 20px;
+    text-align: center;
 }
-.section-header{
-    background: url(../IMG/header.jpg);
-    color: #fff;
+
+.section-header {
+    background: url(../IMG/header.jpg) no-repeat center center/cover;
     font-size: 80px;
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 600;
-    font-style: normal;
     min-height: 100vh;
+    color: white;
 }
-.section-header button{
+
+.section-header button {
     height: 50px;
     width: 300px;
-    color: white;
-    border: 0px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
     border-radius: 5px;
-    text-decoration: none;
     font-size: 30px;
 }
-.section-content{
-    background: rgb(58, 58, 58);
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-content {
+    background: #333;
     min-height: 100vh;
 }
 
-.card{
-    height: 560px;
-    width: 400px;
-    background: rgb(145, 145, 145);
-    padding: 20px;
-    font-size: 25px;
-    text-align: center;
-    margin: 10px;
-}
-.card button{
-    height: 40px;
-    width: 100px;
+#nagy {
+    font-size: 60px;
     color: white;
-    border: 0px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 30px;
 }
-a{
-    text-decoration: none;
-    color: black;
-}
-.content{
+
+.content {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-#nagy{
-    color: white;
-    font-size: 80px;
-}
-#bittodujo{
-    width: 400px;
-}
-.section-footer{
-    background: rgb(22, 22, 22);    
+
+.card {
+    background: #555;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
     color: white;
 }
 
+.card img {
+    width: 100%;
+    height: auto;
+}
 
+.card button {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+}
 
+.section-contact form {
+    display: grid;
+    gap: 10px;
+    width: 300px;
+}
 
+.section-contact input, .section-contact textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
 
+.section-contact button {
+    padding: 10px;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
 
+.section-footer {
+    background: #222;
+    padding: 40px;
+    font-size: 16px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.filter-section {
+    background: #222;
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+}
+.filter-section input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+.filter-section button {
+    padding: 10px;
+    border: none;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
